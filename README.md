@@ -5,24 +5,25 @@ A lightweight and easy-to-use custom React hook for debouncing function calls. T
 ## Installation
 
 ```bash
-npm install react-debounce-hook
+npm install @ayo-dev/react-debounce-hook
 ```
 
 or
 
 ```bash
-yarn add react-debounce-hook
+yarn add @ayo-dev/react-debounce-hook
 ```
 
 ## Usage
 
 ```jsx
-    import { useEffect } from 'react';
-    import { useDebounceCallback } from 'react-debounce-hook';
+import  {useDebounceCallback} from'@ayo-dev/react-debounce-callback-hook';
+import { useEffect, useState } from 'react';
 
+function App() {
     const [value, setValue] = useState('');
     const debouncedCallback = useDebounceCallback((newValue) => {
-        setValue(e.target.value);
+        setValue(newValue);
     }, 500);
 
     const handleChange = (e) => {
@@ -32,13 +33,19 @@ yarn add react-debounce-hook
     useEffect(() => console.log('new value', value), [value]);
 
     return (
-        <input
+      <>
+        <div>{value}</div>
+
+        <textarea
             type="text"
-            value={value}
             onChange={handleChange}
             placeholder="Type something..."
         />
+      </>
     );
+}
+
+export default App;
 ```
 
 ## API
