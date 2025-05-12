@@ -1,5 +1,5 @@
 {
-  "name": "@ayo-dev/react-debounce-callback-hook",
+  "name": "@ayovchev/react-debounce-callback-hook",
   "version": "1.0.0",
   "description": "React debounce hook - A custom React hook that debounces a callback function.",
   "keywords": [

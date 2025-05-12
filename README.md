@@ -17,7 +17,7 @@ yarn add @ayo-dev/react-debounce-hook
 ## Usage
 
 ```jsx
-import  {useDebounceCallback} from'@ayo-dev/react-debounce-callback-hook';
+import  {useDebounceCallback} from'@ayovchev/react-debounce-callback-hook';
 import { useEffect, useState } from 'react';
 
 function App() {
