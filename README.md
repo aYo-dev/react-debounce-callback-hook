@@ -5,13 +5,13 @@ A lightweight and easy-to-use custom React hook for debouncing function calls. T
 ## Installation
 
 ```bash
-npm install @ayovchev/react-debounce-hook
+npm install @ayovchev/react-debounce-callback-hook
 ```
 
 or
 
 ```bash
-yarn add @ayovchev/react-debounce-hook
+yarn add @ayovchev/react-debounce-callback-hook
 ```
 
 ## Usage
