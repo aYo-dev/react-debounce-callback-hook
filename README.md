@@ -48,6 +48,10 @@ function App() {
 export default App;
 ```
 
+### Demo
+
+Check out the live demo on [StackBlitz](https://stackblitz.com/edit/vitejs-vite-yhrnqn1j?file=src%2FApp.tsx).
+
 ## API
 
 ### `useDebounce(value, delay)`
