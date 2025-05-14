@@ -8,8 +8,15 @@
     "debounce",
     "callback"
   ],
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "types": "build/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/esm/index.js",
+      "require": "./build/cjs/index.js" 
+    }
+  },
   "files": [
     "build",
     "README.md"
@@ -37,7 +44,9 @@
     "react-dom": ">=18.0.0"
   },
   "scripts": {
-    "build": "npx tsc --project tsconfig.json",
+    "build:cjs": "npx tsc --project tsconfig.cjs.json",
+    "build:esm": "npx tsc --project tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm",
     "test": "npx jest --watchAll"
   }
 }
