@@ -54,7 +54,7 @@ Check out the live demo on [StackBlitz](https://stackblitz.com/edit/vitejs-vite-
 
 ## API
 
-### `useDebounce(value, delay)`
+### `useDebounceCallback(value, delay)`
 
 - **`callback`**: The value to debounce.
 - **`delay`**: The debounce delay in milliseconds(optional).
